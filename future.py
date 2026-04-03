@@ -4,15 +4,15 @@ x = random.randrange(0, 1000000001, 10)
 
 while True:
     try:
-        y = int(input(f'U have {x} money, how many do u want to take? '))
+        y = int(input(f'U have {x} money, how many do u want to take out?'))
 
-        if y % 10 != 0:
-            print('Only multiples of 10 allowed')
-            continue
+        if y%10 != 0:
+            print('Only 10s kiddo')
+            pass
 
-        if y > x:
+        if y>x:
             print('No.')
-            continue
+            pass
 
         x -= y
         print(f'You took {y}, left {x}')
